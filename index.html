@@ -1,0 +1,421 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Block Breaker: Play Free Online Block Breaker Games & Deluxe</title>
+    <meta name="description" content="Play Block Breaker online free! Experience classic Block Breaker, Block Breaker 3D, and Deluxe versions.">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="https://block-breaker.app/">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "Block Breaker Games Collection",
+            "alternateName": "block-breaker.app",
+            "url": "https://block-breaker.app/",
+            "description": "The ultimate collection of Block Breaker games, featuring classic Block Breaker, Deluxe versions, Block Breaker 2, Block Breaker 3D and more. Play free online and explore different variations of this classic arcade game.",
+            "genre": "Arcade Game",
+            "keywords": "block breaker, block breaker deluxe, block breaker 2, block breaker 3d, free online games"
+        }
+    </script>
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://block-breaker.app/">
+    <meta property="og:title" content="Block Breaker Games - Play Classic & Deluxe Versions Online">
+    <meta property="og:description" content="Discover the best collection of Block Breaker games! Play Block Breaker 2, Block Breaker Deluxe, Block Breaker 3D and more variations of this classic arcade game for free online.">
+    <meta property="og:image" content="https://block-breaker.app/block-breaker-og.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://block-breaker.app/">
+    <meta property="twitter:title" content="Block Breaker: Classic Arcade Game Collection">
+    <meta property="twitter:description" content="Play Block Breaker online! From classic Block Breaker to Block Breaker 2 Deluxe and 3D versions. Free arcade gaming at its best!">
+    <meta property="twitter:image" content="https://block-breaker.app/block-breaker-og.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <script src="js/script.js" defer></script>
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-71S488VE4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-71S488VE4X');
+</script>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <a href="/" title="Block Breaker">
+            <svg width="300" height="40" viewBox="0 0 300 40">
+                <defs>
+                    <style>
+                        .rainbow-text { 
+                            font-family: 'Press Start 2P', monospace;
+                            font-size: 16px;
+                            letter-spacing: -5px;
+                        }
+                    </style>
+                </defs>
+                <text x="0" y="30" class="rainbow-text">
+                    <tspan fill="#FF0000">B</tspan>
+                    <tspan fill="#FF7F00">L</tspan>
+                    <tspan fill="#FFFF00">O</tspan>
+                    <tspan fill="#00FF00">C</tspan>
+                    <tspan fill="#0000FF">K</tspan>
+                    <tspan fill="#8B00FF">B</tspan>
+                    <tspan fill="#FF1493">R</tspan>
+                    <tspan fill="#00FFFF">E</tspan>
+                    <tspan fill="#FF69B4">A</tspan>
+                    <tspan fill="#1E90FF">K</tspan>
+                    <tspan fill="#32CD32">E</tspan>
+                    <tspan fill="#32CD32">R</tspan>
+                </text>
+            </svg>
+        </a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="/" class="btn" title="Block Breaker">Home</a>
+            <a href="/block-breaker-v1" class="btn" title="Block Breaker v1">Block Breaker V1</a>
+            <a href="/brick-breaker-3d" class="btn" title="Block Breaker 3D">Block Breaker 3D</a>
+            <a href="/brick-breaker-physics" class="btn" title="Block Breaker Bphysics">Bphysics</a>
+
+        </div>
+    </nav>
+    <div class="container">
+        
+        <section id="game" class="section full-width">
+            <div class="game-container">
+                <div class="game-main">
+                    <div class="game-iframe">
+                        <div id="game-overlay" class="game-overlay">
+                            <div class="game-card">
+                                <img src="images/hotgame/block-breaker.jpg" alt="Block Breaker Preview" class="game-preview">
+                                <h2>Block Breaker</h2>
+                                <button id="play-btn" class="play-btn">Play Now</button>
+                            </div>
+                            <div class="domain-name">block-breaker.app</div>
+                        </div>
+                        <iframe
+                            id="game-frame"
+                            src="https://games.construct.net/31370/latest"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <!--this is testdemos-->
+                    <div class="game-controls">
+                        <h1 style="padding-left: 10px;">Block Breaker</h1>
+                        <div class="game-actions">
+                            <button id="fullscreen-btn" class="fullscreen-btn" title="Fullscreen">
+                                <svg viewBox="0 0 24 24" width="24" height="24">
+                                    <path fill="currentColor" d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/>
+                                </svg>    
+                            </button>
+                        </div>
+                    </div>
+                    <div class="share-buttons">
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=https://block-breaker.app/" target="_blank" rel="noopener noreferrer" class="share-button facebook">
+                            <i class="fa fa-facebook"></i> <span class="share-text">Facebook</span>
+                        </a>
+                        <a href="https://twitter.com/intent/tweet?url=https://block-breaker.app/" target="_blank" rel="noopener noreferrer" class="share-button twitter">
+                            <i class="fa fa-twitter"></i> <span class="share-text">Twitter</span>
+                        </a>
+                        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://block-breaker.app/" target="_blank" rel="noopener noreferrer" class="share-button linkedin">
+                            <i class="fa fa-linkedin"></i> <span class="share-text">Linkedin</span>
+                        </a>
+                        <a href="mailto:?subject=Check out Sprunki Ketchup!&body=https://block-breaker.app/" class="share-button email">
+                            <i class="fa fa-envelope-o"></i> <span class="share-text">E-mail</span>
+                        </a>
+                        <a href="https://api.whatsapp.com/send?text=Check out Sprunki Ketchup! https://block-breaker.app/" target="_blank" rel="noopener noreferrer" class="share-button whatsapp">
+                            <i class="fa fa-whatsapp"></i> <span class="share-text">WhatsApp</span>
+                        </a>
+                        <a href="https://www.reddit.com/submit?url=https://block-breaker.app/" target="_blank" rel="noopener noreferrer" class="share-button reddit">
+                            <i class="fa fa-reddit"></i> <span class="share-text">Reddit</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="game-sidebar">
+                    <div class="game-recommendations">
+                        <div class="game-item">
+                            <a href="block-breaker-v1" title="Block Breaker V1" class="game-link">
+                                <div class="game-image-container">
+                                    <img src="images/hotgame/block-breaker-v1.png" alt="Block Breaker V1" class="game-image">
+                                </div>
+                                <p class="game-title">Block Breaker V1</p>
+                            </a>
+                        </div>
+                        <div class="game-item">
+                            <a href="brick-breaker-3d" title="Brick Breaker 3D" class="game-link">
+                                <div class="game-image-container">
+                                    <img src="images/hotgame/brick-breaker-3d.jpg" alt="Brick Breaker 3D" class="game-image">
+                                </div>
+                                <p class="game-title">Brick Breaker 3D</p>
+                            </a>
+                        </div>
+                        <div class="game-item" style="margin-bottom: 10px;">
+                            <a href="brick-breaker-physics" title="Brick Breaker Physics" class="game-link">
+                                <div class="game-image-container">
+                                    <img src="images/hotgame/brick-breaker-physics.jpg" alt="Brick Breaker Physics" class="game-image">
+                                </div>
+                                <p class="game-title">Brick Breaker Physics</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="trending-games" class="section game-recommendations-section">
+            <div class="game-recommendations">
+                <div class="game-item">
+                    <a href="block-breaker-game" title="Block Breaker Game" class="game-link">
+                        <div class="game-image-container">
+                            <img src="images/hotgame/block-breaker-game.jpg" alt="Block Breaker Game" class="game-image">
+                        </div>
+                        <p class="game-title">Block Breaker Game</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a href="block-breaker-gd" title="Block Breaker GD" class="game-link">
+                        <div class="game-image-container">
+                            <img src="images/hotgame/block-breaker.jpg" alt="Block Breaker GD" class="game-image">
+                        </div>
+                        <p class="game-title">Block Breaker GD</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a href="block-breaker-online" title="Block Breaker Online" class="game-link">
+                        <div class="game-image-container">
+                            <img src="images/hotgame/block-breaker-online.jpg" alt="Block Breaker Online" class="game-image">
+                        </div>
+                        <p class="game-title">Block Breaker Online</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a href="brick-breaker-retro" title="Brick Breaker Retro" class="game-link">
+                        <div class="game-image-container">
+                            <img src="images/hotgame/brick-breaker-retro.jpg" alt="Brick Breaker Retro" class="game-image">
+                        </div>
+                        <p class="game-title">Brick Breaker Retro</p>
+                    </a>
+                </div>
+                <div class="game-item">
+                    <a href="merge-brick-breaker" title="Merge Brick Breaker" class="game-link">
+                        <div class="game-image-container">
+                            <img src="images/hotgame/merge-brick-breaker.jpg" alt="Merge Brick Breaker" class="game-image">
+                        </div>
+                        <p class="game-title">Merge Brick Breaker</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>Welcome to Block Breaker </h2>
+            <p><strong>Block Breaker</strong> represents the pinnacle of classic arcade gaming, offering an extensive collection of block-breaking adventures that have captivated players for generations. Our platform brings together the most exciting variations of this timeless game, from the original Block Breaker to the enhanced Block Breaker Deluxe and the innovative Block Breaker 3D.</p>
+            <img src="images/hotgame/block-breaker.jpg" alt="Block Breaker Gameplay" class="feature-image">
+        </section>
+
+        <section id="features" class="section">
+            <h2>Experience the Evolution of  Games</h2>
+            <p>What started as a simple yet addictive arcade game has evolved into a diverse collection of engaging variants. Each version brings its own unique twist to the classic formula, ensuring hours of entertainment for players of all skill levels.</p>
+            <ul>
+                <li>Classic Edition: Experience the timeless gameplay that started it all</li>
+                <li>Deluxe Version: Enhanced graphics and power-ups for increased excitement</li>
+                <li>Advanced Edition: Innovative block patterns and challenging levels</li>
+                <li>3D Experience: A revolutionary take with immersive three-dimensional gameplay</li>
+                <li>Instant Play: Jump into the action directly in your browser</li>
+                <li>Free versions available for endless entertainment</li>
+            </ul>
+        </section>
+
+        <section id="game-mechanics" class="section">
+            <h2>Master the Art of Precision Gaming</h2>
+            <p>Dive into an immersive arcade experience where skill meets strategy. Control your paddle with pinpoint accuracy, unleash powerful combinations, and navigate through increasingly challenging stages. Our collection features innovative mechanics that revolutionize the classic brick-smashing formula:</p>
+            <ul>
+                <li>Dynamic Physics System: Experience realistic ball trajectories and collisions</li>
+                <li>Advanced Power-up Mechanics: Chain reactions, multi-ball effects, and paddle enhancements</li>
+                <li>Progressive Level Design: Each stage introduces new challenges and tactical opportunities</li>
+                <li>Skill-based Achievements: Unlock special rewards by mastering advanced techniques</li>
+            </ul>
+        </section>
+
+        <section id="game-modes" class="section">
+            <h2>Diverse Gaming Experiences</h2>
+            <p>Explore multiple game modes designed to challenge your skills and keep you engaged:</p>
+            <div class="mode-grid">
+                <div class="mode-item">
+                    <h3>Adventure Mode</h3>
+                    <p>Journey through themed worlds, each with unique challenges and boss battles. Master special abilities, collect power-ups, and unlock new stages as you progress.</p>
+                </div>
+                <div class="mode-item">
+                    <h3>Challenge Mode</h3>
+                    <p>Test your skills in time-limited challenges. Complete objectives, earn high scores, and compete with players worldwide on our global leaderboards.</p>
+                </div>
+                <div class="mode-item">
+                    <h3>Endless Mode</h3>
+                    <p>Push your limits in an infinite gameplay experience. Face increasingly difficult patterns and see how long you can survive.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="accessibility" class="section">
+            <h2>Gaming for Everyone</h2>
+            <p>We believe in making gaming accessible to all players. Our games feature:</p>
+            <ul>
+                <li>Customizable Controls: Adjust sensitivity and button mapping to your preference</li>
+                <li>Colorblind Support: Multiple color schemes for enhanced visibility</li>
+                <li>Difficulty Options: Adaptive difficulty settings for personalized challenge levels</li>
+                <li>Tutorial System: In-depth guidance for new players</li>
+                <li>Practice Mode: Perfect your skills without pressure</li>
+            </ul>
+        </section>
+
+        <section id="community" class="section">
+            <h2>Join Our Gaming Community</h2>
+            <p>Connect with fellow enthusiasts and enhance your gaming experience:</p>
+            <div class="community-features">
+                <ul>
+                    <li>Share strategies and tips with other players</li>
+                    <li>Participate in weekly tournaments and special events</li>
+                    <li>Create and share custom level designs</li>
+                    <li>Track your progress and compare stats</li>
+                    <li>Earn exclusive badges and achievements</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="gameplay" class="section">
+            <h2>Master the Art of Block Breaking</h2>
+            <p>Whether you're new to Block Breaker or a seasoned player, our comprehensive collection offers something for everyone:</p>
+            <ol>
+                <li>Navigate your paddle with precision using mouse or keyboard controls</li>
+                <li>Break through increasingly challenging block configurations</li>
+                <li>Collect power-ups to enhance your gameplay experience</li>
+                <li>Progress through 150 carefully designed levels</li>
+                <li>Challenge yourself with special indestructible blocks</li>
+                <li>Discover multiple ball and paddle combinations</li>
+            </ol>
+            <p>Ready to test your skills? <a href="/" title="Play Block Breaker">Play Block Breaker online now</a> and join millions of players worldwide!</p>
+        </section>
+
+        <section id="versions" class="section">
+            <h2>Explore Block Breaker Variations</h2>
+            <div class="version-item">
+                <h3>Block Breaker 3 Unlimited</h3>
+                <p>Experience the ultimate Block Breaker adventure with scrolling level designs, multiple balls, and epic boss battles. Features 100 unique stages across 7 distinct locations, plus a dynamic level generator for endless gameplay.</p>
+            </div>
+            <div class="version-item">
+                <h3>Block Breaker 2 Deluxe</h3>
+                <p>The perfect blend of classic Block Breaker gameplay with modern enhancements. Enjoy improved graphics, new power-ups, and challenging level designs that will test your skills.</p>
+            </div>
+            <div class="version-item">
+                <h3>Block Breaker 3D</h3>
+                <p>Take your Block Breaker experience to new dimensions with immersive 3D gameplay. Navigate through three-dimensional spaces while maintaining the core mechanics that made Block Breaker famous.</p>
+            </div>
+        </section>
+
+        <section id="features-detailed" class="section">
+            <h2>Why Choose Our Block Breaker Collection?</h2>
+            <div class="feature-grid">
+                <div class="feature-item">
+                    <h3>Progressive Difficulty</h3>
+                    <p>Each Block Breaker game offers carefully balanced difficulty progression, ensuring both newcomers and veterans find the perfect challenge level.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Power-Up System</h3>
+                    <p>Enhance your Block Breaker experience with various power-ups: multiply balls, expand paddles, and unlock special abilities to clear challenging levels.</p>
+                </div>
+                <div class="feature-item">
+                    <h3>Level Variety</h3>
+                    <p>From classic Block Breaker stages to complex multi-screen challenges, our collection offers unprecedented variety in level design and gameplay mechanics.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="tips" class="section">
+            <h2>Block Breaker Strategy Guide</h2>
+            <p>Master these essential Block Breaker techniques to improve your gameplay:</p>
+            <ul>
+                <li>Anticipate ball trajectories to position your paddle effectively</li>
+                <li>Prioritize power-ups that complement your playing style</li>
+                <li>Focus on clearing paths to reach isolated blocks</li>
+                <li>Use corner rebounds to access difficult areas</li>
+                <li>Save special abilities for challenging situations</li>
+            </ul>
+        </section>
+
+        <section id="faq" class="section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Can I play Block Breaker for free?</h3>
+                <p>Yes! Many versions of Block Breaker are available to play for free directly in your web browser. Our collection includes both free and premium versions to suit every player's needs.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Which Block Breaker version should I start with?</h3>
+                <p>We recommend starting with the classic Block Breaker to master the fundamentals before progressing to more complex versions like Block Breaker Deluxe or Block Breaker 3D.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are Block Breaker games suitable for all ages?</h3>
+                <p>Absolutely! Block Breaker games are family-friendly and perfect for players of all ages. The intuitive controls and gradual difficulty progression make them accessible to everyone.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I play Block Breaker on mobile devices?</h3>
+                <p>Yes, our Block Breaker collection is optimized for both desktop and mobile play, ensuring you can enjoy breaking blocks wherever you go.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
+        <div class="logo">
+            <svg width="300" height="40" viewBox="0 0 300 40">
+                <defs>
+                    <style>
+                        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+                        .rainbow-text { 
+                            font-family: 'Press Start 2P', cursive;
+                            font-size: 16px;
+                            letter-spacing: -5px;
+                        }
+                    </style>
+                </defs>
+                <text x="0" y="30" class="rainbow-text">
+                    <tspan fill="#FF0000">B</tspan>
+                    <tspan fill="#FF7F00">L</tspan>
+                    <tspan fill="#FFFF00">O</tspan>
+                    <tspan fill="#00FF00">C</tspan>
+                    <tspan fill="#0000FF">K</tspan>
+                    <tspan fill="#8B00FF">B</tspan>
+                    <tspan fill="#FF1493">R</tspan>
+                    <tspan fill="#00FFFF">E</tspan>
+                    <tspan fill="#FF69B4">A</tspan>
+                    <tspan fill="#1E90FF">K</tspan>
+                    <tspan fill="#32CD32">E</tspan>
+                    <tspan fill="#32CD32">R</tspan>
+                </text>
+            </svg>
+        </div>
+        <nav class="footer-nav">
+            <a href="/" title="Block Breaker">Home</a>
+            <a href="/about">About</a>
+            <a href="/terms">Terms of Use</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="https://www.parodybox.net/" title="ParodyBox" target="_blank">ParodyBox</a>
+            <a href="https://www.parasprunki.org/" title="Parasprunki" target="_blank">Parasprunki</a>
+            <a href="https://level-devil.net/" title="Level Devil" target="_blank">Level Devil</a>
+            <a href="https://curve-rush.site/" title="Curve Rush" target="_blank">Curve Rush</a>
+        </nav>
+        <p class="footer-disclaimer">© 2025 block-breaker.app. All rights reserved. </p>
+    </footer>
+</body>
+</html>

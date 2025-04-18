@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Page Not Found | Block Breaker</title>
+    <meta name="description" content="Block Breaker's 404 page. The page you're looking for might have been removed, had its name changed, or is temporarily unavailable.">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <link rel="stylesheet" href="css/fonts.css">
+
+    <style>
+        .error-container {
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .error-code {
+            font-size: 120px;
+            color: #6200EA;
+            margin-bottom: 20px;
+        }
+        .error-message {
+            font-size: 24px;
+            margin-bottom: 30px;
+        }
+        .home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #6200EA;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .home-button:hover {
+            background-color: #3700B3;
+        }
+        .sprunki-game {
+            margin-top: 40px;
+        }
+        .sprunki-character {
+            font-size: 50px;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .sprunki-character:hover {
+            transform: scale(1.2);
+        }
+    </style>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-71S488VE4X"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-71S488VE4X');
+</script>
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="logo">
+            <a href="/" title="Block Breaker">
+            <svg width="300" height="40" viewBox="0 0 300 40">
+                <defs>
+                    <style>
+                        .rainbow-text { 
+                            font-family: 'Press Start 2P', monospace;
+                            font-size: 16px;
+                            letter-spacing: -5px;
+                        }
+                    </style>
+                </defs>
+                <text x="0" y="30" class="rainbow-text">
+                    <tspan fill="#FF0000">B</tspan>
+                    <tspan fill="#FF7F00">L</tspan>
+                    <tspan fill="#FFFF00">O</tspan>
+                    <tspan fill="#00FF00">C</tspan>
+                    <tspan fill="#0000FF">K</tspan>
+                    <tspan fill="#8B00FF">B</tspan>
+                    <tspan fill="#FF1493">R</tspan>
+                    <tspan fill="#00FFFF">E</tspan>
+                    <tspan fill="#FF69B4">A</tspan>
+                    <tspan fill="#1E90FF">K</tspan>
+                    <tspan fill="#32CD32">E</tspan>
+                    <tspan fill="#32CD32">R</tspan>
+                </text>
+            </svg>
+        </a>
+        </div>
+        <button id="menu-toggle" class="menu-toggle">☰</button>
+        <div class="nav-links">
+            <a href="/" class="btn" title="Block Breaker">Home</a>
+            <a href="/block-breaker-v1" class="btn" title="Block Breaker v1">Block Breaker V1</a>
+            <a href="/brick-breaker-3d" class="btn" title="Block Breaker 3D">Block Breaker 3D</a>
+            <a href="/brick-breaker-physics" class="btn" title="Block Breaker Bphysics">Bphysics</a>   
+        </div>
+    </nav>
+
+<div class="container">
+    <div class="error-container">
+        <div class="error-code">404</div>
+        <div class="error-message">Oops! The page you're looking for has vanished into thin air!</div>
+        <a href="/" class="home-button">Return to Homepage</a>
+
+        <div class="sprunki-game">
+            <p>While you're here, why not play a quick game?</p>
+            <p>Click the Sprunki character to make music!</p>
+            <div class="sprunki-character" id="sprunki">🎵</div>
+        </div>
+    </div>
+</div>
+
+<footer class="site-footer">
+    <div class="logo">
+        <svg width="300" height="40" viewBox="0 0 300 40">
+            <defs>
+                <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+                    .rainbow-text { 
+                        font-family: 'Press Start 2P', cursive;
+                        font-size: 16px;
+                        letter-spacing: -5px;
+                    }
+                </style>
+            </defs>
+            <text x="0" y="30" class="rainbow-text">
+                <tspan fill="#FF0000">B</tspan>
+                <tspan fill="#FF7F00">L</tspan>
+                <tspan fill="#FFFF00">O</tspan>
+                <tspan fill="#00FF00">C</tspan>
+                <tspan fill="#0000FF">K</tspan>
+                <tspan fill="#8B00FF">B</tspan>
+                <tspan fill="#FF1493">R</tspan>
+                <tspan fill="#00FFFF">E</tspan>
+                <tspan fill="#FF69B4">A</tspan>
+                <tspan fill="#1E90FF">K</tspan>
+                <tspan fill="#32CD32">E</tspan>
+                <tspan fill="#32CD32">R</tspan>
+            </text>
+        </svg>
+    </div>
+    <nav class="footer-nav">
+        <a href="/" title="Block Breaker">
+        <a href="/about">About</a>
+        <a href="/terms">Terms of Use</a>
+        <a href="/privacy">Privacy Policy</a>
+    </nav>
+    <p class="footer-disclaimer">© 2025 block-breaker.app. All rights reserved. </p>
+</footer>
+
+
+<script>
+    const sprunki = document.getElementById('sprunki');
+    const sounds = ['C4', 'D4', 'E4', 'F4', 'G4', 'A4', 'B4'];
+    let audioContext;
+
+    sprunki.addEventListener('click', () => {
+        if (!audioContext) {
+            audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        }
+        playRandomNote();
+        sprunki.style.transform = 'sccompanies.ale(1.2)';
+        setTimeout(() => sprunki.style.transform = 'scale(1)', 200);
+    });
+
+    function playRandomNote() {
+        const frequency = getFrequency(sounds[Math.floor(Math.random() * sounds.length)]);
+        const oscillator = audioContext.createOscillator();
+        oscillator.type = 'sine';
+        oscillator.frequency.setValueAtTime(frequency, audioContext.currentTime);
+        oscillator.connect(audioContext.destination);
+        oscillator.start();
+        oscillator.stop(audioContext.currentTime + 0.5);
+    }
+
+    function getFrequency(note) {
+        const notes = {'C4': 261.63, 'D4': 293.66, 'E4': 329.63, 'F4': 349.23, 'G4': 392.00, 'A4': 440.00, 'B4': 493.88};
+        return notes[note];
+    }
+</script>
+</body>
+</html>
